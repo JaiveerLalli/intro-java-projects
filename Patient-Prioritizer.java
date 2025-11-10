@@ -146,7 +146,5 @@ public class PatientPrioritizer {
         } else { // has more than 5 digits
             return false; 
         }
-        // NOTE: the above can be written with improved "boolean zen" as follows: 
-        // return val != 0 && val / 10 == 0;
-        }
-    } 
+    }
+} 
