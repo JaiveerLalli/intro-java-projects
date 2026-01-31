@@ -1,0 +1,75 @@
+Todo List Manager
+
+Course: CSE 122
+Author: Jaiveer Lalli
+Date: 1-29-2026
+TA: Yang Wu
+
+Overview
+
+TodoListManager is a simple command-line program that allows users to manage a personal todo list. Users can add tasks, mark tasks as completed, save and load todo lists from files, and view their current tasks.
+
+A creative extension (controlled by the EXTENSION_FLAG) allows users to automatically sort tasks by their length, from shortest to longest.
+
+Features
+
+Add a todo item – Users can add a task to a specific position or to the end of the list.
+
+Mark tasks as done – Remove a completed task from the list.
+
+Save todo list – Save the current list of tasks to a file.
+
+Load todo list – Load a todo list from a file, replacing the current list.
+
+Display tasks – Prints the current list of todos with their order numbers.
+
+Optional sorting extension – Sort tasks by length if EXTENSION_FLAG is set to true.
+
+How to Use
+
+Run the program in a Java-enabled environment.
+
+You will see a menu asking for user input:
+
+(A)dd TODO, (M)ark TODO as done, (L)oad TODOs, (S)ave TODOs, (Q)uit?
+
+
+Enter the corresponding letter to perform an action.
+
+Follow prompts for each action:
+
+Adding tasks asks for task name and position.
+
+Marking tasks done asks for the number of the task to remove.
+
+Saving/loading asks for the filename.
+
+Enter Q to quit the program.
+
+Example
+Welcome to your TODO List Manager!
+What would you like to do?
+(A)dd TODO, (M)ark TODO as done, (L)oad TODOs, (S)ave TODOs, (Q)uit? A
+What would you like to add? Finish homework
+Where in the list should it be (1-1)? (Enter for end): 
+Today's TODOs:
+  1: Finish homework
+
+File Structure
+
+TodoListManager.java – Main Java file containing all logic for the todo list.
+
+Extension
+
+Sorting tasks by length:
+Controlled by EXTENSION_FLAG (boolean).
+
+false → No sorting
+
+true → Automatically sorts tasks from shortest to longest
+
+Notes
+
+Program uses command-line input for simplicity and classroom learning purposes.
+
+File input/output is text-based; each line in a file represents one task.
