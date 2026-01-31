@@ -1,0 +1,75 @@
+Stonks – Stock Simulator
+
+Course: CSE 122
+Author: Jaiveer Lalli
+Date: 1-22-2026
+TA: Yang Wu
+
+Overview
+
+Stonks is a command-line stock market simulator that allows users to buy and sell stocks, track their portfolio, and save or load portfolio data from files. 
+Users interact with the program through a menu system and can view all available stocks and their current holdings.
+
+Features
+
+Buy stocks – Users can select a stock and enter a budget to purchase fractional shares.
+
+Sell stocks – Users can sell any amount of stock they own.
+
+Display portfolio – View current holdings and the number of shares for each stock.
+
+Save portfolio – Save the current portfolio to a file for later use.
+
+Load portfolio – Load a portfolio from a previously saved file.
+
+Final portfolio value – When quitting, the program displays the total value of the portfolio.
+
+How to Use
+
+Run the program in a Java-enabled environment.
+
+Enter the name of a stock file when prompted. The file should contain stock tickers and prices.
+
+Use the menu to perform actions:
+
+Menu: (B)uy, (Se)ll, (D)isplay, (S)ave, (Q)uit
+
+
+Follow the prompts to buy/sell stocks, view your portfolio, or save/load files.
+
+Enter Q to quit and see the total portfolio value.
+
+Example
+Enter stocks file name: stocks.txt
+
+Welcome to the CSE 122 Stocks Simulator!
+There are 3 stocks on the market:
+AAPL: 175.0
+GOOG: 135.0
+TSLA: 210.0
+
+Menu: (B)uy, (Se)ll, (D)isplay, (S)ave, (Q)uit
+Enter your choice: B
+Enter the stock ticker: AAPL
+Enter your budget: 350
+You successfully bought AAPL.
+
+Menu: (B)uy, (Se)ll, (D)isplay, (S)ave, (Q)uit
+Enter your choice: D
+
+Portfolio:
+AAPL 2.0
+
+File Structure
+
+Stonks.java – Main Java file containing all logic for stock management.
+
+Stock data files – Plain text files with stock tickers and prices (one stock per line).
+
+Notes
+
+Program uses fractional shares for simplicity.
+
+Requires proper formatting of stock files: each line should have a ticker and a numeric price.
+
+All input is case-insensitive for stock tickers.
