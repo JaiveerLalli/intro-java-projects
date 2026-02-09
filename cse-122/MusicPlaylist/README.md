@@ -45,17 +45,16 @@ Menu Options
 (D) Delete from history
 (Q) Quit
 
-Error Handling
+Error Handling:
 
 IllegalStateException is thrown when:
     Playing a song with an empty playlist
-
     Viewing playlist or history when empty
 
 IllegalArgumentException is thrown when:
     Attempting to delete more songs than exist in history
 
-Technologies Used
+Technologies Used:
 
 Java
 Object-Oriented Programming
