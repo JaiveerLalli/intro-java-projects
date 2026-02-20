@@ -1,0 +1,115 @@
+Overview
+
+Absurdle is a variation of the popular word game Wordle. Instead of choosing a single secret word at the start of the game, Absurdle dynamically changes the possible target word after each guess to make the game as difficult as possible.
+
+Rather than committing to one word, the program keeps track of all possible valid words and always selects the largest remaining word group that matches the feedback pattern. The game ends only when the user forces the program into a single possible solution.
+
+How the Game Works
+
+The user selects:
+
+A dictionary file
+
+A word length
+
+The program filters the dictionary to only include words of the chosen length.
+
+The user enters guesses.
+
+After each guess:
+
+The program generates patterns (🟩 🟨 ⬜) for every possible remaining word.
+
+It selects the pattern that keeps the largest number of words remaining.
+
+The word list is reduced to only those matching that pattern.
+
+The game ends when the pattern contains only green squares (correct word guessed).
+
+Color Key
+
+🟩 Green – Correct letter in the correct position
+
+🟨 Yellow – Correct letter in the wrong position
+
+⬜ Gray – Letter not in the word
+
+Features
+
+Dynamic target word selection (no fixed secret word)
+
+Uses Sets and Maps to efficiently narrow possibilities
+
+Supports any dictionary file
+
+Handles repeated letters correctly
+
+Tracks and prints guess history
+
+Key Methods
+prepDictionary
+
+Filters dictionary words by the chosen word length.
+
+recordGuess
+
+Generates all possible feedback patterns and selects the one that preserves the largest word group.
+
+bestPattern
+
+Chooses the pattern that keeps the most remaining candidate words.
+
+patternFor
+
+Generates Wordle-style feedback (green/yellow/gray) while correctly accounting for repeated letters.
+
+How to Run
+
+Compile:
+
+javac Absurdle.java
+
+
+Run:
+
+java Absurdle
+
+
+Provide:
+
+Dictionary filename
+
+Desired word length
+
+Guesses
+
+Example Gameplay
+Welcome to the game of Absurdle.
+What dictionary would you like to use? dictionary.txt
+What length word would you like to guess? 5
+> crate
+: ⬜🟨⬜⬜⬜
+
+> stone
+: 🟩⬜⬜🟨⬜
+
+Concepts Used
+
+HashSet
+
+TreeMap
+
+ArrayList
+
+File I/O with Scanner
+
+Exception handling
+
+Greedy strategy (maximize remaining word possibilities)
+
+Author
+
+Jaiveer Lalli
+CSE 122
+TA: Yang Wu
+2-18-26
