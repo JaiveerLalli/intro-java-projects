@@ -1,16 +1,13 @@
 # Intro Java Projects
 
-This repository contains several Java projects completed as part of the **CSE 121–123** course series.  
-Each project focuses on applying fundamental programming concepts such as methods, loops, arrays, and object-oriented design.
+A collection of java projects built while developing skills in algorithms,
+data structures, and object-oriented design. Projects range from game simulations
+to file-based applications and cryptography tools
+
 
 Each folder contains:
 - `ProjectName.java` — main source file  
 - `README.md` — explanation of the project, its purpose, and how it works
 
----
-
-**Author:** Jaiveer Lalli  
-**Course:** CSE 121, CSE 122, CSE 123 at the University of Washington  
-**Languages:** Java 
-
+**Author:** Jaiveer Lalli, Computer Engineering - University of Washington
 
